@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../styles/product.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <h1>Quantiva</h1>
+            <img src="../assets/logo/shopping-cart.png" alt="Quantiva Logo" class="logo-img">
+        </div>
+        <nav aria-label="Main Navigation" class="nav-container">
+            <ul>
+                <li><a href="./products.html" class="nav-link">Products</a></li>
+                <li><a href="./checkout.html" class="nav-link">Cart</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#shop" class="nav-link">Locate Our Stores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-section">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <article class="product-item">
+                    <img src="../assets/products/pexels-dmitriy-steinke-559643503-20669538.jpg" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>$199.99</p>
+                    <button class="add-to-cart" data-product="Product 1" data-price="199.99">Add to Cart</button>
+                </article>
+                <article class="product-item">
+                    <img src="../assets/products/pexels-karolina-grabowska-5632379.jpg" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>$49.99</p>
+                    <button class="add-to-cart" data-product="Product 2" data-price="49.99">Add to Cart</button>
+                </article>
+                <article class="product-item">
+                    <img src="../assets/products/pexels-olly-972804.jpg" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>$299.99</p>
+                    <button class="add-to-cart" data-product="Product 3" data-price="299.99">Add to Cart</button>
+                </article>
+                <article class="product-item">
+                    <img src="../assets/products/pexels-olly-972804.jpg" alt="Product 4">
+                    <h3>Product 4</h3>
+                    <p>$99.99</p>
+                    <button class="add-to-cart" data-product="Product 4" data-price="99.99">Add to Cart</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar for Cart -->
+    <aside class="cart-sidebar">
+        <h3>Your Cart</h3>
+        <ul class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <div class="cart-total">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+        <button class="checkout-btn"><a href="./checkout.html">Proceed to Checkout</a></button>
+        <button class="clear-cart">Clear Cart</button>
+        <button class="close-cart">Close</button>
+    </aside>
+
+    <!-- Floating Cart Button -->
+    <button class="cart-floater" aria-label="Open Cart">
+        🛒
+    </button>
+
+    <footer class="footer">
+        <p>&copy; 2025 Quantiva Store. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/product.js"></script>
+</body>
+</html>
